@@ -1,0 +1,13 @@
+init finish
+INPUT->+(A,B,a)-(C,D,b)*(a,b,c)+(c,E,d)=(d,X)
+<OUTPUT>
+LD $A
+AD $B
+ST $a
+LD $C
+SB $D
+ST $b
+LD $a
+ML $b
+AD $E
+ST $X

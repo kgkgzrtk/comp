@@ -1,0 +1,33 @@
+init finish
+INPUT->X=(A+B)*(C-D)+E
+[X]
+stock: outstr:X
+[=]
+stock:= outstr:X
+[(]
+stock:=( outstr:X
+[A]
+stock:=( outstr:XA
+[+]
+stock:=(+ outstr:XA
+[B]
+stock:=(+ outstr:XAB
+[)]
+stock:= outstr:XAB+
+[*]
+stock:=* outstr:XAB+
+[(]
+stock:=*( outstr:XAB+
+[C]
+stock:=*( outstr:XAB+C
+[-]
+stock:=*(- outstr:XAB+C
+[D]
+stock:=*(- outstr:XAB+CD
+[)]
+stock:=* outstr:XAB+CD-
+[+]
+stock:=+ outstr:XAB+CD-*
+[E]
+stock:=+ outstr:XAB+CD-*E
+OUTPUT->XAB+CD-*E+=

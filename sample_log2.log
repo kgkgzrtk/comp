@@ -1,0 +1,23 @@
+init finish
+INPUT->=+E*-DC+BAX
+buf:=
+buf:+
+a:E
+buf:*
+buf:-
+a:D
+b:C
+out:D-C
+a:)D-C(
+buf:+
+a:B
+b:A
+out:B+A
+b:)B+A(
+out:)D-C(*)B+A(
+b:)D-C(*)B+A(
+out:E+)D-C(*)B+A(
+a:E+)D-C(*)B+A(
+b:X
+out:E+)D-C(*)B+A(=X
+OUTPUT->X=(A+B)*(C-D)+E

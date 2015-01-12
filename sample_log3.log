@@ -1,0 +1,8 @@
+init finish
+INPUT->XAB+CD-*E+=
+<OUTPUT>
++(A,B,a)
+-(C,D,b)
+*(a,b,c)
++(c,E,d)
+=(d,X)
