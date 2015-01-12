@@ -43,10 +43,12 @@ int main(){
     init();
     printf("init finish\n");
     input();
-    output(i,instr);
+    printf("INPUT->%s\n",instr);
+    
     int n;
     char token;
-
+    
+    printf("<OUTPUT>\n");
     for(n=0;n<i;n++){
         token=instr[n];
         if(isalpha(token)){
