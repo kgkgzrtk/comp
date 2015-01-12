@@ -56,7 +56,7 @@ int main(){
         }else if(token=='='){
             printf("%c(%c,%c)\n",token,st[s-1],st[s-2]);
             s--;
-            pushdown(w+'a');
+            pushdown(st[s-2]);
             w++;
         }else{
             printf("%c(%c,%c,%c)\n",token,st[s-2],st[s-1],w+'a');
