@@ -77,7 +77,10 @@ int main(){
         if(isalnum(token)){
             pushdown(token);
         }else if(token=='='){
-            printf("LD $%c\n",w1);
+            if(w1!=ew){
+                if(flag) printf("ST $%c\n",ew);
+                printf("LD $%c\n",w1);
+            }
             ew=w2;
             s=s-2;
         }else if(((id(token)<3&&id(pre_token)<3)||(id(token)>2&&id(pre_token)>2))&&w1==ew){

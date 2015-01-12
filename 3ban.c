@@ -54,7 +54,7 @@ int main(){
         if(isalpha(token)){
             pushdown(token);
         }else if(token=='='){
-            printf("%c(%c,%d)\n",token,st[s-1],w);
+            printf("%c(%c,%c)\n",token,st[s-1],st[s-2]);
             s--;
             pushdown(w+48);
             w++;
